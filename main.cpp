@@ -1,8 +1,10 @@
 #include <iostream>
 
+// includes Glad & GLFW headers.
 #include "include/glad/glad.h"
 #include "include/GLFW/glfw3.h"
 
+// includes ImGui headers.
 #include "include/ImGUI/imgui.h"
 #include "include/ImGUI/imgui_impl_glfw.h"
 #include "include/ImGUI/imgui_impl_opengl3.h"
@@ -52,6 +54,7 @@ int main() {
     // render loop.
     while(!glfwWindowShouldClose(window))
     {
+        // sets the color of the OpenGL window.
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
@@ -71,6 +74,7 @@ int main() {
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
+        // swaps buffers on the GLFW window and handles poll events.
         glfwSwapBuffers(window);
         glfwPollEvents();    
     }
