@@ -3,7 +3,7 @@ uses CMake to build OpenGL, GLFW, Glad, and ImGUI. it's been tested using MinGW6
 project.<br>
 
 # Requirements
-* MinGW64 compiler.<br>
+* MinGW64 GCC compiler.<br>
 * MingGW64 GLFW package. open `mingw64.exe` and use this command to install it: `pacman -S mingw-w64-x86_64-glfw`.<br>
 * Visual Studio Code.<br>
 * Visual Studio Code Extensions: C/C++ and CMake Tools.<br>
