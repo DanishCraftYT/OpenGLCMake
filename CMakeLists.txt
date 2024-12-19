@@ -20,6 +20,3 @@ target_include_directories(CMakeOpenGLTest PRIVATE "include/")
 
 include_directories(${OPENGL_INCLUDE_DIRS})
 target_link_libraries(CMakeOpenGLTest ${OPENGL_LIBRARIES} glfw)
-
-include(CTest)
-enable_testing()
