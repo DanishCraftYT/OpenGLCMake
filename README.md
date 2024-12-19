@@ -4,7 +4,7 @@ project.<br>
 
 # Requirements
 * MinGW64 and GCC.<br>
-* MingGW64 GLFW package. open `mingw64.exe` and use this command to install it: `pacman -S mingw-w64-x86_64-glfw`.<br>
+* MinGW64 GLFW package. open `mingw64.exe` and use this command to install it: `pacman -S mingw-w64-x86_64-glfw`.<br>
 * Visual Studio Code.<br>
 * Visual Studio Code Extensions: C/C++ and CMake Tools.<br>
 
