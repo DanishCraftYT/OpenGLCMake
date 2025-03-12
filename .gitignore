@@ -1,1 +1,2 @@
-build/
+out/build/CMakeOpenGLPreset/*
+!out/build/CMakeOpenGLPreset/glfw3.dll
