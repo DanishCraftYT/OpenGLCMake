@@ -14,4 +14,7 @@ once you have met all the requirements listed above. clone the repo and open it 
 if the "glfw3.dll" file is missing from the build output directory. please run the "InstallLibraries.py" script which will copy the "glfw3.dll" file into the build output directory or copy and paste the "glfw3.dll" file into the build output directory. the "glfw3.dll" file can be found in the "lib" folder.<br>
 
 # updating GLFW
-to update GLFW. first update or install the glfw3 package. then delete the "lib" and "include/GLFW" folders in this project. then delete the "glfw3.dll" file in the build output folder in this project. then run the "InstallLibraries.py" script to install the glfw3 package and copy it's files into this project. then build the project and run it.<br>
+to update GLFW. first update the glfw3 package. then delete the "lib" and "include/GLFW" folders in this project.
+
+## Windows
+delete the "glfw3.dll" file in the build output folder in this project. run the "InstallLibraries.py" script to install the glfw3 package and copy it's files into this project. then build the project and run it.<br>
