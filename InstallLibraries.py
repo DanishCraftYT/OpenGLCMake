@@ -1,3 +1,4 @@
+import subprocess
 import shutil
 import os
 
@@ -16,7 +17,7 @@ glfw_path = os.path.join(vcpkg_dir, "packages/glfw3_x64-mingw-dynamic")
 # installs the GLFW3 vcpkg package if it's not already installed.
 if not os.path.exists(glfw_path):
     print("installing GLFW3 vcpkg package")
-    os.system("vcpkg install glfw3")
+    subprocess.call("vcpkg install glfw3 --triplet=x64-mingw-dynamic --host-triplet=x64-mingw-dynamic")
 
 # get's the directory of this script.
 user_dir = os.path.abspath(os.path.dirname(__file__))
