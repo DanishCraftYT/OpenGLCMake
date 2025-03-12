@@ -3,7 +3,7 @@ uses CMake to build OpenGL, GLFW, Glad, and ImGUI. it's been tested using the GC
 
 # Requirements
 * GCC compiler.<br>
-* vcpkg glfw3 package. by default the glfw3 package files are included in this project however if you want to update them. you can follow [this guide](https://github.com/DanishCraftYT/OpenGLCMake/edit/main/README.md#updating-glfw).<br>
+* vcpkg glfw3 package. by default the glfw3 package files are included in this project however if you want to update them. you can follow [this guide](https://github.com/DanishCraftYT/OpenGLCMake?tab=readme-ov-file#updating-glfw).<br>
 * Visual Studio Code.<br>
 * Visual Studio Code Extensions: C/C++ and CMake Tools.<br>
 
