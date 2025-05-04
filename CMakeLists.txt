@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.10.0)
+
+set(CMAKE_CXX_COMPPILER g++)
+set(CMAKE_C_COMPPILER gcc)
+
 project(CMakeOpenGLTest VERSION 0.1.0 LANGUAGES C CXX)
 
 # finds the OpenGL package.
