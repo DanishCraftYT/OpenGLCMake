@@ -47,13 +47,15 @@ if not os.path.exists(os.path.join(user_dir, "include/GLFW/")):
         shutil.copy(os.path.join(glfw_source_path, filename), os.path.join(user_dir, "include/GLFW/"))
 
 # exists the program if the build output folder doesn't exist.
-if not os.path.exists(os.path.join(user_dir, "out/build/CMakeOpenGLPreset")):
+if not os.path.exists(os.path.join(user_dir, "build/")):
     print("failed to find the build output folder. please run this script again once the build output folder has been created so it can copy the glfw3.dll file into the build output folder")
     exit()
 
 # copies the "glfw3.dll" file into the build output folder if it isn't already in that folder.
-if not os.path.exists(os.path.join(user_dir, "out/build/CMakeOpenGLPreset/glfw3.dll")):
+if not os.path.exists(os.path.join(user_dir, "build/glfw3.dll")):
     print("copying the glfw3.dll file to the build output folder")
-    shutil.copy(os.path.join(user_dir, "lib/glfw3.dll"), os.path.join(user_dir, "out/build/CMakeOpenGLPreset/"))
+    shutil.copy(os.path.join(user_dir, "lib/glfw3.dll"), os.path.join(user_dir, "build/"))
 
 print("installed all libraries")
+
+input("press enter to exit...")
