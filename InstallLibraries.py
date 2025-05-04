@@ -4,7 +4,7 @@ import os
 # get's the directory of this script.
 user_dir = os.path.abspath(os.path.dirname(__file__))
 
-update_GLFW = input("do you want to update GLFW? (y/n): ").lower()
+update_GLFW = input("do you want to update VCPKG Packages? (y/n): ").lower()
 
 if update_GLFW == "y":
     # asks user for their vcpkg directory.
@@ -52,10 +52,9 @@ if update_GLFW == "y":
     for filename in os.listdir(glfw_source_path):
         shutil.copy(os.path.join(glfw_source_path, filename), os.path.join(user_dir, "include/GLFW/"))
 
-# exists the program if the build output folder doesn't exist.
+# creates the "build" folder if it doesn't exist.
 if not os.path.exists(os.path.join(user_dir, "build/")):
-    print("failed to find the build output folder. please run this script again once the build output folder has been created so it can copy the glfw3.dll file into the build output folder")
-    exit()
+    os.mkdir(os.path.join(user_dir, "build/"))
 
 # copies the "glfw3.dll" file into the build output folder if it isn't already in that folder or GLFW was updated.
 if not os.path.exists(os.path.join(user_dir, "build/glfw3.dll")) or update_GLFW == "y":
