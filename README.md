@@ -11,6 +11,8 @@ uses CMake to build OpenGL, GLFW, Glad, ImGUI, and VCPKG (package manager). it's
 # Install Guide (Windows)
 download msys2 from [msys2.org](https://www.msys2.org/). once installed. open `msys2.exe` and type `pacman -S mingw-w64-x86_64-toolchain` to install the GCC compiler and Make. make sure you also add the `mingw64/bin` folder to PATH. you can download Python from [python.org](https://www.python.org/) and make sure you also add Python to PATH.<br>
 
+you will also need CMake to build the project. you can donwload it from [cmake.org](https://cmake.org/download/).<br>
+
 you can also install VCPKG if you want to update the VCPKG packages this project uses. you can download VCPKG from the [vcpkg github repo](https://github.com/microsoft/vcpkg/releases). once installed. open the root folder of the VCPKG installation and run the `bootstrap-vcpkg.bat` script to create the `vcpkg.exe` executable. make sure you also add the root directory of your VCPKG installation to PATH.<br>
 
 # Building The Project
