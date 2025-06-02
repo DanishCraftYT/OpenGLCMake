@@ -3,6 +3,7 @@ uses CMake to build OpenGL, GLFW, Glad, ImGUI, and VCPKG (package manager). it's
 
 # Requirements
 * GCC compiler.<br>
+* CMake.<br>
 * Make.<br>
 * Python 3.13.<br>
 * (optional) vcpkg. by default the vcpkg packages files are included in this project however if you want to update them. you can follow [this guide](https://github.com/DanishCraftYT/OpenGLCMake?tab=readme-ov-file#updating-glfw).<br>
