@@ -9,7 +9,7 @@ uses CMake to build OpenGL, GLFW, Glad, ImGUI, and VCPKG (package manager). it's
 * (optional) vcpkg. by default the vcpkg packages files are included in this project however if you want to update them. you can follow [this guide](https://github.com/DanishCraftYT/OpenGLCMake?tab=readme-ov-file#updating-glfw).<br>
 
 # Install Guide (Windows)
-### GCC Compiler
+### GCC Compiler and Make
 download msys2 from [msys2.org](https://www.msys2.org/). once installed. open `msys2.exe` and type `pacman -S mingw-w64-x86_64-toolchain` to install the GCC compiler and Make. make sure you also add the `mingw64/bin` folder to PATH.
 
 ### Python
